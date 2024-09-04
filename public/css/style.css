@@ -1,0 +1,112 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    color-scheme: dark;
+  }
+
+.ftp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+button {
+    background-color: #0d6efd;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a58ca;
+}
+
+h1 {
+    color: #eeeeee;
+    margin: 0;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+li:hover{
+    background-color: #4b4b4b;
+}
+
+li {
+    background-color: #333333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    min-width: 250px; /* Adjust based on your layout */
+    width: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#fileList{
+    display: flex;
+}
+.icon-file, .icon-folder {
+    padding-right: 20px; /* Make room for the icon */
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px; /* Adjust size as needed */
+}
+
+.icon-file {
+    background-image: url('/icons/file-icon.png');
+}
+
+.icon-folder {
+    background-image: url('/icons/folder-icon.png');
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no{
+    display: none;
+}
+
+.pather{
+    width: 250px;
+}
+
+.padding{
+    margin:5px;
+}

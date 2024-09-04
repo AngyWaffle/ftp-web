@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File List</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <h1>File List</h1>
+    <input type="file" id="fileInput" multiple class="padding">
+    <button id="uploadButton" onclick="uploadThing()" class="padding">Upload Files</button>
+    <input type="text" class="pather padding" id="currentPath" placeholder="Upload path">
+    <div id="fileList">
+        <ul>
+            <% files.forEach(function(file) { %>
+                <li class="<%= file.isDirectory ? 'folder' : 'file' %>" data-path="<%= file.name %>/">
+                    <i class="<%=file.isDirectory ? 'fas fa-folder' : 'fas fa-file'; %>"></i>
+                    <%= file.name %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+
+    <script src="/ejs.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
+
